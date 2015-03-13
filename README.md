@@ -1,1 +1,1 @@
-# hello-scalatra
+## hello-scalatra

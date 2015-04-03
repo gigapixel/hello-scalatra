@@ -5,13 +5,12 @@ import org.scalatra._
 
 class HelloServlet extends ScalatraServlet {
 
-  get("/") {
-    "Hello world"
-  }
+    get("/") {
+        "Hello world"
+    }
 
-  get("/:name") {
-    val name = params.getOrElse("name", "world")
-    "Hello " + name
-  }
-
+    get("/:name") {
+        val name = params.getOrElse("name", "world")
+        "Hello " + name
+    }
 }

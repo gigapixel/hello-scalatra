@@ -13,4 +13,10 @@ class HelloServlet extends ScalatraServlet {
         val name = params.getOrElse("name", "world")
         "Hello " + name
     }
+
+    get("/:fname/:lname") {
+        val fname = params.getOrElse("fname", "firstname")
+        val lname = params.getOrElse("lname", "lastname")
+        "Hello " + fname + ", " + lname
+    }
 }

@@ -9,6 +9,10 @@ class HelloServlet extends ScalatraServlet {
         "Index"
     }
 
+    get("/test") {
+        "Test"
+    }
+
     get("/hello") {
         "Hello world."
     }

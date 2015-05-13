@@ -6,7 +6,11 @@ import org.scalatra._
 class HelloServlet extends ScalatraServlet {
 
     get("/") {
-        "Hello world"
+        "Index"
+    }
+
+    get("/hello") {
+        "Hello world."
     }
 
     get("/:name") {
@@ -19,4 +23,5 @@ class HelloServlet extends ScalatraServlet {
         val lname = params.getOrElse("lname", "lastname")
         "Hello " + fname + ", " + lname
     }
+
 }
